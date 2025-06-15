@@ -22,7 +22,7 @@ public class LoginForm extends javax.swing.JFrame {
      */
     public LoginForm() {
         initComponents();
-         setLocationRelativeTo(null); // This centers the window
+        setLocationRelativeTo(null); // This centers the window
 
         // Check if connected to database
         Connection conn = DBConnection.getConnection();

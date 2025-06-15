@@ -6,6 +6,7 @@ package automatedpayrollsystem;
 
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author Jomax
@@ -31,9 +32,11 @@ public class HRDashboard extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        LogoutButton = new javax.swing.JButton();
+        ViewLeaveRequestsButton = new javax.swing.JButton();
+        manageEmployeesButton = new javax.swing.JButton();
+        viewEmployeeListButton1 = new javax.swing.JButton();
+        ViewMySalaryPayslipButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 520));
@@ -50,69 +53,99 @@ public class HRDashboard extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(240, 240, 240)
+                .addGap(244, 244, 244)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1484, Short.MAX_VALUE))
+                .addContainerGap(1480, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(32, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addGap(30, 30, 30))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 2040, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 172, 238));
-        jButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jButton1.setText("Logout");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        LogoutButton.setBackground(new java.awt.Color(0, 172, 238));
+        LogoutButton.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        LogoutButton.setText("Logout");
+        LogoutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogoutButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 180, -1));
+        getContentPane().add(LogoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 210, -1));
 
-        jButton2.setBackground(new java.awt.Color(0, 172, 238));
-        jButton2.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jButton2.setText("View Employee List");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        ViewLeaveRequestsButton.setBackground(new java.awt.Color(0, 172, 238));
+        ViewLeaveRequestsButton.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        ViewLeaveRequestsButton.setText("View Leave Requests");
+        ViewLeaveRequestsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ViewLeaveRequestsButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 180, -1));
+        getContentPane().add(ViewLeaveRequestsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 210, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 172, 238));
-        jButton3.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jButton3.setText("Manage Employees");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        manageEmployeesButton.setBackground(new java.awt.Color(0, 172, 238));
+        manageEmployeesButton.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        manageEmployeesButton.setText("Manage Employees");
+        manageEmployeesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                manageEmployeesButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 180, -1));
+        getContentPane().add(manageEmployeesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 210, -1));
+
+        viewEmployeeListButton1.setBackground(new java.awt.Color(0, 172, 238));
+        viewEmployeeListButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        viewEmployeeListButton1.setText("View Employee List");
+        viewEmployeeListButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewEmployeeListButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(viewEmployeeListButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 210, -1));
+
+        ViewMySalaryPayslipButton.setBackground(new java.awt.Color(0, 172, 238));
+        ViewMySalaryPayslipButton.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        ViewMySalaryPayslipButton.setText("View My Salary Payslip");
+        ViewMySalaryPayslipButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewMySalaryPayslipButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ViewMySalaryPayslipButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 210, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LogoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutButtonActionPerformed
 int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to logout?", "Logout", JOptionPane.YES_NO_OPTION);
 if (confirm == JOptionPane.YES_OPTION) {
     this.dispose();
     new LoginForm().setVisible(true); // bumalik sa login form
 }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogoutButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void ViewLeaveRequestsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewLeaveRequestsButtonActionPerformed
+new HRDashboard().setVisible(true);
+this.dispose(); // optional, if you want to close the current window
+    }//GEN-LAST:event_ViewLeaveRequestsButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void manageEmployeesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeesButtonActionPerformed
+    new ManageEmployeeForm().setVisible(true);
+    this.dispose(); // or this.setVisible(false);
+    }//GEN-LAST:event_manageEmployeesButtonActionPerformed
+
+    private void viewEmployeeListButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewEmployeeListButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_viewEmployeeListButton1ActionPerformed
+
+    private void ViewMySalaryPayslipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewMySalaryPayslipButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ViewMySalaryPayslipButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,10 +183,12 @@ if (confirm == JOptionPane.YES_OPTION) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton LogoutButton;
+    private javax.swing.JButton ViewLeaveRequestsButton;
+    private javax.swing.JButton ViewMySalaryPayslipButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton manageEmployeesButton;
+    private javax.swing.JButton viewEmployeeListButton1;
     // End of variables declaration//GEN-END:variables
 }
